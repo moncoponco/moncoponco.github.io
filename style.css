@@ -1,219 +1,51 @@
-/* CSS styling examples */
-
-body {
-    background-color: antiquewhite;
+/*Navigation Bar*/
+/*Back Button*/
+button[name=back-button] {
+  padding: 8px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
 }
-
-/*  menu nav bar */
-
-  nav ul {
-    display: block;
-    background-color: gainsboro;
-    padding: 20px;
-    list-style: none;
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    color: maroon;
-    display: flex;
-    justify-content: space-evenly;
- }
-
-/*  styling here for hover for menu-from-UL-list demo */
-
-nav li:hover {
-    background-color:yellow
+/*Back Button End*/
+/*Collapsible Menu*/
+.menu-content{
+  padding: 10 0 10 50px;
+  max-height: 0;
+  overflow: hidden;
+  text-align: right;
 }
-
-h1 {
-    font-family: 'Press Start 2P', cursive;
-    color: magenta;
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(close.png);
 }
-
-h2 {
-    font-family: 'Courier Prime', monospace;
-    font-size: 1.2em;
+input:checked ~ .menu-content {
+    max-height: 100%;
 }
-
-/*  centering the h2s that are also image galleries */
-
-.image-gallery {
-    text-align: center;
+.collapsible-menu {
+  padding: 0px 30px;
+  right: 0;
+  position: fixed;
 }
-
-p {
-    font-family: 'Roboto', sans-serif;
-    color: darkblue; 
-    font-size: 1.1em;
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
 }
-
-figcaption {
-    font-size: .75em;
-    font-style:italic;
+.collapsible-menu a {
+  display: block;
+  padding: 10px;
 }
-
-table {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .9em;
-    background-color: #dddddd;
-    padding: 10px;   
-    margin: 20px;
-    border-radius: 25px;  
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+  background: url(menu.png) no-repeat left center;
+  padding: 10px 0 10px 50px;
 }
-
-/* styling the data table here */
-
-th, td {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    padding: 6px;  
-    border-color: #FFFFFF;
-    border-collapse: collapse;
-    text-align: right;
+input#menu {
+  display: none;
 }
-
-/* styling the line item markers to circles */
-
-ul {
-    list-style: circle;
+input:checked + label {
+  background-image: url(close.png);
 }
-
-/* unvisited link */
-
-a:link {
-    color: blue;
-}
-
-/* visited link */
-
-p a:visited {
-    color: olivedrab;
-}
-
-/* mouse over link */
-
-a:hover {
-    color: #FF00FF;
-}
-
-
-/* footer */
-
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .8em;
-    color: gray;
-}
-
-/* more styling based on classes */
-
-.image-gallery {
-    font-family: 'Courier Prime', monospace;
-    color:cornflowerblue;
-    font-size: 1.4em;
-}
-
-.listing {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .9em;
-    background-color: #dddddd;
-    width:fit-content;
-    padding: 20px;
-    border-radius: 25px; 
-}
-
-/*  flexbox on content sections */
-
-.graphics-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
-  }
-  
-/*  overlays */
-/*  main overlay - how it will look before hover */
-/* note opacity setting of 0 to be invisible */
-
-
-.portfolio-overlay {
-    display: block;
-    /* starting opacity 0 so invisible UNTIL HOVER */
-    opacity: 0;
-    background-color: aqua;
-    /* position is important here and on what it overlays */
-    position: absolute;
-    height: 30%;
-    width: 80%;
-    padding: 10px;
-    bottom: 10%;
-    left: 10%;
-}
-
-/* code for what happens when image is hovered */
-
-.portfolio-hover {
-    position: relative;
-}
-
-.portfolio-hover:hover .portfolio-overlay {
-    opacity: 0.7;
-}
-
-.portfolio-hover:hover img {
-    scale: 1.15;
-}
-
-/* code for sytling the text that is inside the hover box */
-
-.overlay-text {
-    color: rgb(84, 84, 4);
-    font-size: 1.1em;
-    margin: 0;
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    text-align: center;
-    bottom: 20%;
-  }
-
-
-/* each image-text pair is a row and stays together */
-
-.documentation-row-01 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: start space-around;
-}
-
-.documentation-row-02 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: start space-around;
-}
-
-.descriptor p {
-    padding-top: 40px;
-    padding-left: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    color:black;
-    font-style:italic;
-}
-
-.story {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-
-/* SECTION ENDS */
-
-/* styling based on a unique ID */
-
-#summary {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9em;
-    color: magenta;
-}
+/*Collapsible Menu End*/
