@@ -65,14 +65,13 @@ input:checked + label {
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: blue;
+  background-color: none;
   flex-flow: row nowrap;
   align-itmes:center;
   object-fit: contain;
   background-size:contain;
 }
 
-img
 /* .gallery {
   size:small;
   display: flex;
