@@ -25,22 +25,29 @@ button[name=back-button] {
   max-height: 0;
   overflow: hidden;
   text-align: right;
+  background-color: white;
 }
+
 /* Toggle Effect */
 input:checked ~ label {
     background-image: url(close.png);
+    background-color: white;
 }
 input:checked ~ .menu-content {
     max-height: 100%;
+    background-color: white;
 }
 .collapsible-menu {
   padding: 0px 30px;
   right: 0;
   position: fixed;
+  background-color: white;
 }
 .collapsible-menu ul {
   list-style-type: none;
   padding: 0;
+
+
 }
 .collapsible-menu a {
   display: block;
@@ -60,7 +67,35 @@ input:checked + label {
 }
 /*Collapsible Menu End*/
 
-/*Gallery*/
+
+.gallery ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;}
+
+.gallery li{
+  height: 40vh;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.gallery img{
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+/*Gallery
 .gallery{
   display:flex;
   flex-wrap: wrap;
@@ -70,6 +105,12 @@ input:checked + label {
   align-itmes:center;
   object-fit: contain;
   background-size:contain;
+  object-fit: cover;
+}
+.graffiti-one {
+  width: auto;
+  height: 100px;
+  object-fit: cover;
 }
 
 /* .gallery {
