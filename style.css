@@ -5,28 +5,59 @@
        url('http://hershey-noailles.luuse.io/output/Hershey-Noailles-Futura-Duplex-Regular/Hershey-Noailles-Futura-Duplex-Regular.eot') format('embedded-opentype');
 }
 
-/*Navigation Bar*/
+body {
+  margin:20px;
+}
+
+a:link, a:visited, a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-transform: uppercase;
+}
+
+
+/************Navigation Bar************/
 .navigation {
   font-family: 'MyFont';
+  font-size: 15pt;
+  position: fixed;
+  left:130px;
+  right:100px;
+  width:100px;
+  height:50px;
+  z-index: 999;
 }
+
+
 /*Back Button*/
 button[name=back-button] {
   padding: 8px 20px;
   border: none;
-  background: none;
+  background: white;
   cursor: pointer;
   display: inline-block;
   position: fixed;
+  font-size: 15pt;
+  border: solid black 2px;
 }
+
+
+
 /*Back Button End*/
 /*Collapsible Menu*/
 .menu-content{
   padding: 10 0 10 50px;
-  max-height: 0;
+  max-height: 0px;
+  max-width: 10% auto;
   overflow: hidden;
   text-align: right;
   background-color: white;
 }
+
 
 /* Toggle Effect */
 input:checked ~ label {
@@ -39,15 +70,16 @@ input:checked ~ .menu-content {
 }
 .collapsible-menu {
   padding: 0px 30px;
-  right: 0;
+  right: 100px;
   position: fixed;
   background-color: white;
+  border: solid black 2px;
+  text-align: right;
+
 }
 .collapsible-menu ul {
   list-style-type: none;
-  padding: 0;
-
-
+  padding: 0px;
 }
 .collapsible-menu a {
   display: block;
@@ -57,7 +89,7 @@ input:checked ~ .menu-content {
   display: block;
   cursor: pointer;
   background: url(menu.png) no-repeat left center;
-  padding: 10px 0 10px 50px;
+  padding: 10px 0px 10px 50px;
 }
 input#menu {
   display: none;
@@ -66,28 +98,95 @@ input:checked + label {
   background-image: url(close.png);
 }
 /*Collapsible Menu End*/
+/************Navigation Bar End************/
+
+/************* Homepage Word List *************/
+
+dl {
+  display: block;
+  width: 100%;
+  position: fixed;
+}
+.words dt {
+  font-family: MyFont;
+  font-size: 5rem;
+  background-color: white;
+  border: solid black 2px;
+  padding: 5px;
+}
+.words dd { 
+  font-family: 'MyFont';
+  font-size: 12pt;
+  text-align: left;
+  display: block;
+  width: 85%;
+  padding-bottom: 5px;
+  padding-top: 3px;
+}
 
 
-.gallery ul{
+
+
+
+/************* Galleries *************/
+
+.gallery {
+  max-width: 100%;
+  margin-top: 70px;
+  margin-left: 10% auto;
+  margin-right: 10% auto;
+  display: box;
   display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  list-style-type: none;
+  flex-direction: right;
   align-items: center;
-  justify-content: center;}
-
-.gallery li{
-  height: 40vh;
   flex-wrap: wrap;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  box-pack: center;
+  justify-content: center;
+  align-content: stretch;
 }
 
-.gallery img{
-  max-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  vertical-align: bottom;
+.gallery-item {
+  min-width: 300px;
+  max-width: 400px;
+  flex: 3 4 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.wrapper {
+  min-height: 130vh;
+  padding: 2rem 0px;
+  font-family: 'MyFont';
+  font-size: 12pt;
+  text-align: left;
+}
+
+
+.gallery-item figure {
+  padding: 0px;
+  margin: 0px;
+  border: black solid 1px;
+  overflow: hidden;
+}
+
+.gallery-item figure:hover img {
+  transform: scale(7);
+  overflow: hidden;
+}
+
+.gallery-item figure img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery-item figcaption {
+  margin-top: 5px;
+  display: block;
+  padding: 5px 5px;
+  background: white;
+  font-size: 10pt;
 }
 
 
@@ -95,29 +194,15 @@ input:checked + label {
 
 
 
-/*Gallery
-.gallery{
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: none;
-  flex-flow: row nowrap;
-  align-itmes:center;
-  object-fit: contain;
-  background-size:contain;
-  object-fit: cover;
-}
-.graffiti-one {
-  width: auto;
-  height: 100px;
-  object-fit: cover;
+/************* About Page *************/
+
+.about-text {
+  font-family: 'MyFont';
+  font-size: 5rem;
+  text-align: center;
 }
 
-/* .gallery {
-  size:small;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
+
+
+
  
