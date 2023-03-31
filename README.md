@@ -19,10 +19,25 @@ About the project development:
 I began the project with the goal to put together my extensive collection of images collected in the last year. These images are of patterns of lights and shades that I find appealing. 
 
 
-(A description of the context of your project and your approach to project development. This will be specific to your own process, but might include some or all of the following examples: reasons why you chose your topic/project, external links, inspiration for your project, additional detail about your interest in the topic beyond what your project captures, design notes/drawings/screen shots/moodboards/wordbanks/etc. documenting your project development process, and/or screencaptures of your project in process. The purpose of this section is to give the viewer a sense of your project development process.)
+I knew going in that I would want words to take the visitor to a gallery, but I was unsure how the gallery and the word list would be organized. 
+
+I did a few low-fidelity sketches and then moved to figma to play around with style and layout. See images below! 
+
+![low fidelity sketches of website](https://github.com/moncoponco/moncoponco.github.io/process/lowsketching.jpg)
+
+![mid fidelity via figma](https://github.com/moncoponco/moncoponco.github.io/process/figma.jpg)
+
+In terms of UI styling, I was interested in brutalist websites. I chose this aesthetic because it fit well with the subject of the images, and because I personally find it beautiful! 
+
+
+I had already worked on a website on figma about streets: 
+
+Overall, I am very satisfied with the results. 
 
 Sources:
 
 The greater percentage of the pictures were taken by me, a small portion were sent to me by friends. 
 
-References / external acknowledgements 
+References / external acknowledgements:
+
+Font from <a href="http://hershey-noailles.luuse.io/www/#Hershey-Noailles-Futura-Duplex-Regular"> Hershey Noailles </a>
