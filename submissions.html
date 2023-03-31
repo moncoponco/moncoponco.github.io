@@ -11,29 +11,39 @@
 </head>
 
 <body>
-  <!--Menu-->
-  <div class="navigation">
-    <div class="back">
-      <button name="back-button" type="button"><a href="index.html"><</a></button>
+<div id="page-container">
+<!--Menu-->
+  <header>
+    <div class="navigation">
+      <div class="back">
+        <a href="index.html"><button name="back-button" type="button">></button></a>
+      </div>
+      <div class="collapsible-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu">Menu</label>
+          <div class="menu-content">
+              <ul>
+                  <li><a class="menu-item" href="about.html">About</a></li>
+                  <li><a class="menu-item" href="submissions.html">Submissions</a></li>
+               </ul>
+          </div>
+      </div>
     </div>
-    <div class="collapsible-menu">
-      <input type="checkbox" id="menu">
-      <label for="menu">Menu</label>
-        <div class="menu-content">
-            <ul>
-                <li><a class="menu-item" href="about.html">About</a></li>
-                <li><a class="menu-item" href="submissions.html">Submissions</a></li>
-             </ul>
-         </div>
-    </div>
-  </div>
-   <!--End of Menu-->
-   <div>
-     <p class= "about-text">Some day.</p>
-      <p class= "about-text">But not today.</p>
-      <p class= "about-text">(Coming soon-ish)</p>
-   </div>
+  </header>
 
+<!--Words-->
+  <main>
+    <div class="wrapper">
+       <p class= "about-text">Some day.</p>
+        <p class= "about-text">But not today.</p>
+        <p class= "about-text">(Coming soon-ish)</p>
+        <p class= "about-subtext">the idea is collaborative, if you would like to submit an image or an idea, please reach out to moncoponco</p>
+     </div>
+  </main>
 
-
+<!--Footer-->
+    <footer id="footer-submissions">
+      <p class="footer-content">Copyright ©2023, Author: Magdalena Fraga Lauhirat, MONCOPONCO</p>
+    </footer>
+ </div>  
  </body>

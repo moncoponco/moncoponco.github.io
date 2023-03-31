@@ -7,6 +7,8 @@
 
 body {
   margin:20px;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 a:link, a:visited, a:active {
@@ -19,13 +21,16 @@ a:hover {
   text-transform: uppercase;
 }
 
+main {
+  padding-bottom: 5rem;
+}
 
-/************Navigation Bar************/
+/********* Navigation Bar *********/
 .navigation {
   font-family: 'MyFont';
   font-size: 15pt;
   position: fixed;
-  left:130px;
+  left:100px;
   right:100px;
   width:100px;
   height:50px;
@@ -45,9 +50,6 @@ button[name=back-button] {
   border: solid black 2px;
 }
 
-
-
-/*Back Button End*/
 /*Collapsible Menu*/
 .menu-content{
   padding: 10 0 10 50px;
@@ -97,15 +99,22 @@ input#menu {
 input:checked + label {
   background-image: url(close.png);
 }
-/*Collapsible Menu End*/
-/************Navigation Bar End************/
+
+main {
+  display: block;
+}
 
 /************* Homepage Word List *************/
+
+#navigation-to-galleries {
+  display: block;
+  padding-top: 5px;
+  position: absolute;
+}
 
 dl {
   display: block;
   width: 100%;
-  position: fixed;
 }
 .words dt {
   font-family: MyFont;
@@ -116,16 +125,13 @@ dl {
 }
 .words dd { 
   font-family: 'MyFont';
-  font-size: 12pt;
+  font-size: 1rem;
   text-align: left;
   display: block;
   width: 85%;
   padding-bottom: 5px;
   padding-top: 3px;
 }
-
-
-
 
 
 /************* Galleries *************/
@@ -181,17 +187,15 @@ dl {
   max-width: 100%;
 }
 
-.gallery-item figcaption {
-  margin-top: 5px;
-  display: block;
-  padding: 5px 5px;
-  background: white;
-  font-size: 10pt;
+
+.gallery-item ol {
+ list-style-type: none;
+ padding: 0px 5px 0px 5px;
+ margin-top: 5px;
+ display: block;
+ background: white;
+ font-size: 10pt;
 }
-
-
-
-
 
 
 /************* About Page *************/
@@ -200,9 +204,56 @@ dl {
   font-family: 'MyFont';
   font-size: 5rem;
   text-align: center;
+  margin: auto 0;
+}
+
+.about-subtext {
+  font-family: 'MyFont';
+  font-size: 1rem;
+  text-align: center;
+  margin: 7% 10% 0% 10%;
+}
+
+/************* Footer *************/
+
+footer {
+  margin-bottom: 10pt;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  border: solid black 2px;
+  background-color: white;
+  position: absolute;
+
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 
+.footer-content {
+  font-family: 'MyFont';
+  font-size: 15pt;
+  text-align: center;
+}
 
+#footer-submissions {
+
+}
+
+#footer-about {
 
  
+}
+
+
+#footer-home {
+
+}
+
+ #footer-gallery {
+
+}
