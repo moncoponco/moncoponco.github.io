@@ -29,9 +29,6 @@ I did a few low-fidelity sketches and then moved to figma to play around with st
 
 In terms of UI styling, I was interested in brutalist websites. I chose this aesthetic because it fit well with the subject of the images, and because I personally find it beautiful! 
 
-
-I had already worked on a website on figma about streets: 
-
 Overall, I am very satisfied with the results. 
 
 Sources:
