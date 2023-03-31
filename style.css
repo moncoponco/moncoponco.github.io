@@ -74,7 +74,6 @@ button[name=back-button] {
 /*Collapsible Menu*/
 .menu-content{
   max-height: 0;
-  max-width: auto;
   overflow: hidden;
   text-align: right;
   background-color: white;
@@ -88,7 +87,6 @@ input:checked ~ .menu-content {
     max-height: 100%;
     background-color: white;
     display: flex;
-    direction: clomun;
 }
 .collapsible-menu {
   right: 100px;
@@ -159,7 +157,6 @@ dl {
   margin-top: 70px;
   margin-left: 10%;
   margin-right: 10%;
-  display: box;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -274,6 +271,3 @@ footer {
   text-align: right;
 
 }
-
-
-} ***/
