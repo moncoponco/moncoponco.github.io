@@ -1,13 +1,13 @@
 @font-face {
   font-family: MyFont;
-  src: url('font/Hershey-Noailles-Futura-Duplex-Regular') format('ttf'),
+  src: url("../font/Hershey-Noailles-Futura-Duplex-Regular.ttf") format('ttf');
 }
 
 body {
   margin:20px;
   min-height: 100vh;
   flex-direction: column;
-  background-color: red;
+  background-color: white;
 }
 
 a:link, a:visited, a:active {
