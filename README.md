@@ -25,7 +25,7 @@ I did a few low-fidelity sketches and then moved to figma to play around with st
 
 ![low fidelity sketches of website](process/lowsketching.jpg)
 
-![mid fidelity via figma](process/figma.jpg)
+![mid fidelity via figma](process/figma.png)
 
 In terms of UI styling, I was interested in brutalist websites. I chose this aesthetic because it fit well with the subject of the images, and because I personally find it beautiful! 
 
