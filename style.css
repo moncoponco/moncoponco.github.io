@@ -30,6 +30,7 @@ main {
   min-height: 100%;
   flex: 1;
   max-width: 100%;
+  display: block;
 }
 
 a:link, a:visited, a:active {
@@ -67,16 +68,18 @@ button[name=back-button] {
   position: fixed;
   font-size: 15pt;
   border: solid black 2px;
+  height: 50px;
 }
 
 /*Collapsible Menu*/
 .menu-content{
-  padding: 10 0 10 50px;
-  max-height: 0px;
-  max-width: 10% auto;
+  max-height: 0;
+  max-width: auto;
   overflow: hidden;
   text-align: right;
   background-color: white;
+
+
 }
 
 
@@ -84,38 +87,39 @@ button[name=back-button] {
 input:checked ~ .menu-content {
     max-height: 100%;
     background-color: white;
+    display: flex;
+    direction: clomun;
 }
 .collapsible-menu {
-  padding: 0px 30px;
   right: 100px;
+  height: auto;
   position: fixed;
   background-color: white;
   border: solid black 2px;
   text-align: right;
+  padding-right: 20px;
+  padding-left: 20px;
 
 }
 .collapsible-menu ul {
   list-style-type: none;
-  padding: 0px;
 }
 .collapsible-menu a {
   display: block;
-  padding: 10px;
+  line-height: 50px;
 }
 .collapsible-menu label {
   display: block;
   cursor: pointer;
-  padding: 10px 0px 10px 50px;
+  text-align: right;
+  height: 50px;
+  line-height: 50px;
 }
 input#menu {
   display: none;
 }
 input:checked + label {
-  background-image: url(close.png);
-}
-
-main {
-  display: block;
+  background-color: white;
 }
 
 /************* Homepage Word List *************/
@@ -153,14 +157,12 @@ dl {
 .gallery {
   max-width: 100%;
   margin-top: 70px;
-  margin-left: 10% auto;
-  margin-right: 10% auto;
+  margin-left: 10%;
+  margin-right: 10%;
   display: box;
   display: flex;
-  flex-direction: right;
   align-items: center;
   flex-wrap: wrap;
-  box-pack: center;
   justify-content: center;
   align-content: stretch;
 }
@@ -217,37 +219,41 @@ dl {
 /************* About Page *************/
 
 .about {
-  min-height: 100vh;
-  padding-bottom: 20px;
+  min-height: 100%;
+  margin-bottom: 2px;
 }
 .about-text {
   font-family: 'MyFont';
-  font-size:10vh;
+  font-size:10.5vh;
   text-align: justify;
   margin: auto 0;
+  word-break: break-all;
 }
 
 
 /************* Submissions *************/
 
 .submissions {
-  min-height: 100vh;
-  max-height: 100vh;
-  padding-bottom: 20px;
+  min-height: 100%;
+  padding-bottom: 5px;
+  max-width: 100%;
 }
 
 #subm-text {
   font-family: 'MyFont';
-  font-size:15vh;
+  font-size: 13rem;
   text-align: justify;
-  margin: auto 0;
+  margin: auto;
+  word-break: break-all;
 }
 
 #subm-subtext {
   font-family: 'MyFont';
-  font-size: 4rem;
-  text-align: right;
-  margin: 7% 10% 0% 10%;
+  font-size: 18pt;
+  text-align: justify;
+  margin: 5px;
+  border: solid black 2px;
+
 }
 
 /************* Footer *************/
@@ -268,47 +274,6 @@ footer {
   text-align: right;
 
 }
-/***
-#footer-home {
 
-  font-family: 'MyFont';
-  font-size: 10pt;
-  text-align: right;
-  padding: 5px;
-  position: fixed;
-  border: solid black 2px;
-  width: 50%;
-  text-align: left;
-
-}
-
-#footer-gallery {
-  font-family: 'MyFont';
-  font-size: 10pt;
-  text-align: right;
-  padding: 5px;
-}
-
-#footer-about {
-  font-family: 'MyFont';
-  font-size: 10pt;
-  text-align: right;
-  padding: 5px;
-  position: fixed;
-  border: solid black 2px;
-  width: 50%;
-  text-align: left;
-
-}
-
-#footer-submissions {
-    font-family: 'MyFont';
-  font-size: 10pt;
-  text-align: right;
-  padding: 5px;
-  position: fixed;
-  border: solid black 2px;
-  width: 50%;
-  text-align: left;
 
 } ***/
