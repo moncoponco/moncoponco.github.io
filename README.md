@@ -23,9 +23,9 @@ I knew going in that I would want words to take the visitor to a gallery, but I 
 
 I did a few low-fidelity sketches and then moved to figma to play around with style and layout. See images below! 
 
-![low fidelity sketches of website](https://github.com/moncoponco/moncoponco.github.io/process/lowsketching.jpg)
+![low fidelity sketches of website](process/lowsketching.jpg)
 
-![mid fidelity via figma](https://github.com/moncoponco/moncoponco.github.io/process/figma.jpg)
+![mid fidelity via figma](process/figma.jpg)
 
 In terms of UI styling, I was interested in brutalist websites. I chose this aesthetic because it fit well with the subject of the images, and because I personally find it beautiful! 
 
