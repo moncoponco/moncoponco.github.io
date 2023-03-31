@@ -1,8 +1,6 @@
 @font-face {
   font-family: MyFont;
-  src: url('http://hershey-noailles.luuse.io/output/Hershey-Noailles-Futura-Duplex-Regular/Hershey-Noailles-Futura-Duplex-Regular.woff') format('woff'),
-       url('http://hershey-noailles.luuse.io/output/Hershey-Noailles-Futura-Duplex-Regular/Hershey-Noailles-Futura-Duplex-Regular.ttf') format('truetype'),
-       url('http://hershey-noailles.luuse.io/output/Hershey-Noailles-Futura-Duplex-Regular/Hershey-Noailles-Futura-Duplex-Regular.eot') format('embedded-opentype');
+  src: url('font/Hershey-Noailles-Futura-Duplex-Regular') format('ttf'),
 }
 
 body {
