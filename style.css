@@ -3,11 +3,33 @@
   src: url("font/Hershey-Noailles-Futura-Duplex-Regular.ttf") format('truetype');
 }
 
+
+html {
+  height: 100%;
+   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  margin:20px;
-  min-height: 100vh;
+  margin: 20px;
+  min-height: 100%;
+  padding-bottom: 6rem;
   flex-direction: column;
   background-color: white;
+  display: flex;
+  position: relative;
+}
+
+main {
+  padding-bottom: 5px;
+  min-height: 100%;
+  flex: 1;
+  max-width: 100%;
 }
 
 a:link, a:visited, a:active {
@@ -20,9 +42,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-main {
-  padding-bottom: 5rem;
-}
+
 
 /********* Navigation Bar *********/
 .navigation {
@@ -61,10 +81,6 @@ button[name=back-button] {
 
 
 /* Toggle Effect */
-input:checked ~ label {
-    background-image: url(close.png);
-    background-color: white;
-}
 input:checked ~ .menu-content {
     max-height: 100%;
     background-color: white;
@@ -89,7 +105,6 @@ input:checked ~ .menu-content {
 .collapsible-menu label {
   display: block;
   cursor: pointer;
-  background: url(menu.png) no-repeat left center;
   padding: 10px 0px 10px 50px;
 }
 input#menu {
@@ -161,7 +176,7 @@ dl {
 
 
 .wrapper {
-  min-height: 130vh;
+  min-height: 100vh;
   padding: 2rem 0px;
   font-family: 'MyFont';
   font-size: 12pt;
@@ -172,7 +187,7 @@ dl {
 .gallery-item figure {
   padding: 0px;
   margin: 0px;
-  border: black solid 1px;
+  border: black solid 2px;
   overflow: hidden;
 }
 
@@ -189,70 +204,111 @@ dl {
 
 .gallery-item ol {
  list-style-type: none;
- padding: 0px 5px 0px 5px;
+ padding: 10px;
  margin-top: 5px;
+ margin-bottom: 0;
  display: block;
  background: white;
+ text-align: left;
  font-size: 10pt;
 }
 
 
 /************* About Page *************/
 
+.about {
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
 .about-text {
   font-family: 'MyFont';
-  font-size: 5rem;
-  text-align: center;
+  font-size:10vh;
+  text-align: justify;
   margin: auto 0;
 }
 
-.about-subtext {
+
+/************* Submissions *************/
+
+.submissions {
+  min-height: 100vh;
+  max-height: 100vh;
+  padding-bottom: 20px;
+}
+
+#subm-text {
   font-family: 'MyFont';
-  font-size: 1rem;
-  text-align: center;
+  font-size:15vh;
+  text-align: justify;
+  margin: auto 0;
+}
+
+#subm-subtext {
+  font-family: 'MyFont';
+  font-size: 4rem;
+  text-align: right;
   margin: 7% 10% 0% 10%;
 }
 
 /************* Footer *************/
 
 footer {
-  margin-bottom: 10pt;
-  margin-top: auto;
+  position: absolute;
   bottom: 0;
+  right: 0;
+  left:0;
   width: 100%;
-  display: block;
-  border: solid black 2px;
   background-color: white;
   position: absolute;
-
-}
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-
-.footer-content {
+  height: 2.5rem;
+  margin-bottom: 5px;
+  margin-right: 40px;
   font-family: 'MyFont';
-  font-size: 15pt;
-  text-align: center;
+  font-size: 10pt;
+  text-align: right;
+
+}
+/***
+#footer-home {
+
+  font-family: 'MyFont';
+  font-size: 10pt;
+  text-align: right;
+  padding: 5px;
+  position: fixed;
+  border: solid black 2px;
+  width: 50%;
+  text-align: left;
+
 }
 
-#footer-submissions {
-
+#footer-gallery {
+  font-family: 'MyFont';
+  font-size: 10pt;
+  text-align: right;
+  padding: 5px;
 }
 
 #footer-about {
-
- 
-}
-
-
-#footer-home {
-
-}
-
- #footer-gallery {
+  font-family: 'MyFont';
+  font-size: 10pt;
+  text-align: right;
+  padding: 5px;
+  position: fixed;
+  border: solid black 2px;
+  width: 50%;
+  text-align: left;
 
 }
+
+#footer-submissions {
+    font-family: 'MyFont';
+  font-size: 10pt;
+  text-align: right;
+  padding: 5px;
+  position: fixed;
+  border: solid black 2px;
+  width: 50%;
+  text-align: left;
+
+} ***/
