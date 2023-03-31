@@ -1,6 +1,6 @@
 @font-face {
   font-family: MyFont;
-  src: url("../font/Hershey-Noailles-Futura-Duplex-Regular.ttf") format('ttf');
+  src: url("font/Hershey-Noailles-Futura-Duplex-Regular.ttf") format('truetype');
 }
 
 body {
