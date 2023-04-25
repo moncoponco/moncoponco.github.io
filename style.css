@@ -43,15 +43,13 @@ a:hover {
   text-transform: uppercase;
 }
 
-
-
 /********* Navigation Bar *********/
 .navigation {
   font-family: 'MyFont';
   font-size: 15pt;
   position: fixed;
-  left:100px;
-  right:100px;
+  left:5vw;
+  right:5vw;
   width:100px;
   height:50px;
   z-index: 999;
@@ -71,14 +69,14 @@ button[name=back-button] {
   height: 50px;
 }
 
+
+
 /*Collapsible Menu*/
 .menu-content{
   max-height: 0;
   overflow: hidden;
   text-align: right;
   background-color: white;
-
-
 }
 
 
@@ -88,8 +86,14 @@ input:checked ~ .menu-content {
     background-color: white;
     display: flex;
 }
+
+input:unchecked ~ .menu-content {
+    max-height: 50px;
+    background-color: white;
+    display: flex;
+}
 .collapsible-menu {
-  right: 100px;
+  right: 5vw;
   height: auto;
   position: fixed;
   background-color: white;
@@ -97,7 +101,6 @@ input:checked ~ .menu-content {
   text-align: right;
   padding-right: 20px;
   padding-left: 20px;
-
 }
 .collapsible-menu ul {
   list-style-type: none;
@@ -148,7 +151,6 @@ dl {
   padding-bottom: 5px;
   padding-top: 3px;
 }
-
 
 /************* Galleries *************/
 
@@ -214,6 +216,10 @@ dl {
 
 
 /************* About Page *************/
+#about-page {
+  max-height: 100%;
+  position: fixed;
+}
 
 .about {
   min-height: 100%;
@@ -227,11 +233,19 @@ dl {
   word-break: break-all;
 }
 
+@media only screen and (max-width: 600px) {
+  /* for phones */
+  .about-text {
+    font-family: 'MyFont';
+    font-size: 2.2rem;
+    margin-top: 60px;
+    }
 
+}
 /************* Submissions *************/
 
 .submissions {
-  min-height: 100%;
+  min-height: 80%;
   padding-bottom: 5px;
   max-width: 100%;
 }
@@ -250,7 +264,22 @@ dl {
   text-align: justify;
   margin: 5px;
   border: solid black 2px;
+  word-break: break-word;
+  overflow: wrap;
+  bottom: 0px;
+}
 
+@media only screen and (max-width: 600px) {
+  /* for phones */
+    #submission-page {
+  max-height: 100%;
+  position: abosulte;
+  }
+  #subm-text {
+    font-family: 'MyFont';
+    font-size: 5.8rem;
+    margin-top: 60px;
+    }
 }
 
 /************* Footer *************/
@@ -271,3 +300,8 @@ footer {
   text-align: right;
 
 }
+
+
+
+
+*/
