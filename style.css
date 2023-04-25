@@ -2,7 +2,7 @@
   font-family: MyFont;
   src: url("font/Hershey-Noailles-Futura-Duplex-Regular.ttf") format('truetype');
 }
-
+/*béton brut and art brut*/
 
 html {
   height: 100%;
@@ -300,8 +300,3 @@ footer {
   text-align: right;
 
 }
-
-
-
-
-*/
