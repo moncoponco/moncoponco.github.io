@@ -218,7 +218,7 @@ dl {
 /************* About Page *************/
 #about-page {
   max-height: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 .about {
@@ -239,6 +239,7 @@ dl {
     font-family: 'MyFont';
     font-size: 2.2rem;
     margin-top: 60px;
+    position: fixed;
     }
 
 }
