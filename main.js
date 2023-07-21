@@ -39,3 +39,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+      // Add the name of the current page on the breadcrumb menu
+
+
+  function getCurrentPageName() {
+    const urlPath = window.location.pathname;
+    const currentPage = urlPath.split('/').pop().split('.html')[0];
+    return currentPage;
+  }
+  
+  function updateBreadcrumbMenu() {
+    const currentPageName = getCurrentPageName();
+    const currentPageSpan = document.getElementById('current-page-name');
+    currentPageSpan.textContent = currentPageName.toUpperCase();
+  }
+  
+  document.addEventListener('DOMContentLoaded', updateBreadcrumbMenu);
+  window.onpopstate = updateBreadcrumbMenu;
+  

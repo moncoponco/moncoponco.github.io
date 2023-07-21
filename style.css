@@ -33,6 +33,8 @@ main {
   display: block;
 }
 
+/*link styling*/
+
 a:link, a:visited {
   color: black;
   text-decoration: none;
@@ -49,91 +51,60 @@ a:active {
 }
 
 /********* Navigation Bar *********/
+/* Common styles for breadcrumb and about link */
+/* Common styles for breadcrumb and about link */
 .navigation {
   font-family: 'MyFont';
   font-size: 15pt;
-  position: fixed;
-  left: 5vw;
-  right: 5vw;
-  width: 100px;
-  height: 50px;
-  z-index: 999;
-}
-
-label:hover {
-  text-transform: uppercase;
-}
-
-/*Collapsible Menu*/
-.menu-content {
-  max-height: 0;
-  overflow: hidden;
-  text-align: right; /* Align the content to the right */
-  background-color: white;
-}
-
-/* Toggle Effect */
-input:checked ~ .menu-content {
-  max-height: 100%;
-  background-color: white;
-}
-
-.collapsible-menu {
-  right: 5vw;
-  height: auto;
-  position: fixed;
-  background-color: white;
-  border: solid black 2px;
-  text-align: right;
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 300px;
-}
-
-.collapsible-menu ul {
-  list-style-type: none;
   display: flex;
-  flex-direction: column; 
-  margin: 0; 
+  justify-content: space-between;
+  align-items: center;
 }
 
-.collapsible-menu li {
-  margin: 0; 
+ul.breadcrumb-menu {
+  list-style: none;
+  display: flex;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.collapsible-menu a {
-  display: block;
-  line-height: 50px;
-  margin-left: auto; 
+ul.breadcrumb-menu li {
+  margin-right: 5px;
 }
 
-.collapsible-menu label {
-  display: block;
-  cursor: pointer;
-  text-align: right;
-  height: 50px;
-  line-height: 50px;
+ul.breadcrumb-menu li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
-input#menu {
-  display: none;
+ul.breadcrumb-menu li a {
+  text-decoration: none; /* Remove underline on all breadcrumb links */
 }
 
-input:checked + label {
-  background-color: white;
-  text-transform: uppercase;
+/* Style the "About" link */
+.about-link {
+  font-family: 'MyFont';
+  font-size: 15pt;
+  text-decoration: none;
+  color: black;
 }
 
-.collapsible-menu:hover {
-  border: dotted black 2px;
+/* Adjust margins to have equal space from their respective sides */
+ul.breadcrumb-menu li:first-child {
+  width: 50px; /* Set a fixed width for the first li containing the "Index" link */
+  overflow: hidden; /* Hide any overflow if the link is longer */
 }
 
-/* Apply the active style to the link with the same id as the body class */
-body.index #home-link,
-body.about #about-link,
-body.submissions #submissions-link {
-  background-color: #f0f0f0;
-  text-transform: uppercase;
+.about-link {
+  margin-left: auto;
+}
+
+/* Hover effect for the "Index" link */
+ul.breadcrumb-menu li:first-child a:hover {
+  text-transform: uppercase; /* Capitalizes the "Index" link on hover */
 }
 
 
@@ -230,39 +201,24 @@ dl {
 
 
 /************* About Page *************/
+
 #about-page {
-  max-height: 100%;
-  position: absolute;
+  height: 100%;
 }
 
-.about {
-  min-height: 100%;
-  margin-bottom: 2px;
-}
 .about-text {
   font-family: 'MyFont';
-  font-size:10.5vh;
+  font-size:8vh;
   text-align: justify;
   margin: auto 0;
+  margin-top: 10px;
   word-break: break-all;
 }
 
-@media only screen and (max-width: 600px) {
-  /* for phones */
-  .about-text {
-    font-family: 'MyFont';
-    font-size: 2.2rem;
-    margin-top: 60px;
-    position: fixed;
-    }
-
-}
-/************* Submissions *************/
-
-.submissions {
-  min-height: 80%;
-  padding-bottom: 5px;
-  max-width: 100%;
+.palabras-julio {
+  font-size: 20px;
+  font-family: 'MyFont';
+  word-break: break-all;
 }
 
 #subm-text {
@@ -284,16 +240,33 @@ dl {
   bottom: 0px;
 }
 
+.footer-content {
+  height: 12px;
+  font-family: 'MyFont';
+  font-size: 12pt;
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* for phones */
+  .about-text {
+    font-family: 'MyFont';
+    font-size: 2.2rem;
+    margin-top: 60px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
   /* for phones */
     #submission-page {
   max-height: 100%;
-  position: abosulte;
   }
   #subm-text {
     font-family: 'MyFont';
     font-size: 5.8rem;
-    margin-top: 60px;
     }
 }
 
@@ -311,7 +284,7 @@ footer {
   margin-bottom: 5px;
   margin-right: 40px;
   font-family: 'MyFont';
-  font-size: 10pt;
+  font-size: 12pt;
   text-align: right;
 
 }

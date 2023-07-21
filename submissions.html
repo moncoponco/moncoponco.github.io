@@ -8,21 +8,16 @@
 </head>
 
 <body id="submission-page">
+  <script src="main.js"></script>
 <div id="page-container">
 <!--Menu-->
 <header>
   <div class="navigation">
-    <div class="collapsible-menu">
-      <input type="checkbox" id="menu">
-      <label for="menu">Menu</label>
-        <div class="menu-content">
-            <ul>
-              <li><a class="menu-item" href="index.html">index</a></li>  
-              <li><a class="menu-item" href="about.html">about</a></li>
-                <li><a class="menu-item" href="submissions.html">submissions</a></li>
-             </ul>
-        </div>
-    </div>
+      <ul class="breadcrumb-menu">
+          <li><a href="index.html">index</a></li>
+          <li><span id="current-page-name"></span></li>
+        </ul>
+        <a href="about.html" class="about-link">About</a>
   </div>
 </header>
 
