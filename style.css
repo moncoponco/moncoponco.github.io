@@ -51,8 +51,6 @@ a:active {
 }
 
 /********* Navigation Bar *********/
-/* Common styles for breadcrumb and about link */
-/* Common styles for breadcrumb and about link */
 .navigation {
   font-family: 'MyFont';
   font-size: 15pt;
@@ -81,10 +79,9 @@ ul.breadcrumb-menu li+li:before {
 }
 
 ul.breadcrumb-menu li a {
-  text-decoration: none; /* Remove underline on all breadcrumb links */
+  text-decoration: none; 
 }
 
-/* Style the "About" link */
 .about-link {
   font-family: 'MyFont';
   font-size: 15pt;
@@ -92,19 +89,17 @@ ul.breadcrumb-menu li a {
   color: black;
 }
 
-/* Adjust margins to have equal space from their respective sides */
 ul.breadcrumb-menu li:first-child {
-  width: 50px; /* Set a fixed width for the first li containing the "Index" link */
-  overflow: hidden; /* Hide any overflow if the link is longer */
+  width: 50px; 
+  overflow: hidden; 
 }
 
 .about-link {
   margin-left: auto;
 }
 
-/* Hover effect for the "Index" link */
 ul.breadcrumb-menu li:first-child a:hover {
-  text-transform: uppercase; /* Capitalizes the "Index" link on hover */
+  text-transform: uppercase;
 }
 
 
@@ -116,10 +111,7 @@ ul.breadcrumb-menu li:first-child a:hover {
   position: absolute;
 }
 
-dl {
-  display: block;
-  width: 100%;
-}
+
 .words dt {
   font-family: MyFont;
   font-size: 5rem;
@@ -135,6 +127,14 @@ dl {
   width: 85%;
   padding-bottom: 5px;
   padding-top: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* for phones */
+  .words dt {
+    font-size: 3rem;
+    width: 100%;
+    }
 }
 
 /************* Galleries *************/
