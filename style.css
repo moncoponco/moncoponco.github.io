@@ -98,7 +98,13 @@ ul.breadcrumb-menu li:first-child a:hover {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 600px) {
+  #current-page-name {
+    font-size: 5vw;
+    padding-right: 15px;
+  }
 
+}
 /************* Homepage Word List *************/
 
 #navigation-to-galleries {
