@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  margin: 20px;
+  margin: 30px;
   min-height: 100%;
   padding-bottom: 6rem;
   flex-direction: column;
@@ -98,7 +98,7 @@ ul.breadcrumb-menu li:first-child a:hover {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   #current-page-name {
     font-size: 5vw;
     padding-right: 15px;
@@ -124,7 +124,7 @@ ul.breadcrumb-menu li:first-child a:hover {
 }
 .words dd { 
   font-family: 'MyFont';
-  font-size: 1rem;
+  font-size: 22px;
   text-align: left;
   display: block;
   width: 85%;
@@ -226,7 +226,7 @@ ul.breadcrumb-menu li:first-child a:hover {
 
 #subm-text {
   font-family: 'MyFont';
-  font-size: 13rem;
+  font-size: 20vh;
   text-align: justify;
   margin: auto;
   word-break: break-all;
