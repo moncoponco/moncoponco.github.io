@@ -53,7 +53,7 @@ a:active {
 /********* Navigation Bar *********/
 .navigation {
   font-family: 'MyFont';
-  font-size: 15pt;
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,7 +84,6 @@ ul.breadcrumb-menu li a {
 
 .about-link {
   font-family: 'MyFont';
-  font-size: 15pt;
   text-decoration: none;
   color: black;
 }
@@ -109,6 +108,7 @@ ul.breadcrumb-menu li:first-child a:hover {
   display: block;
   padding-top: 5px;
   position: absolute;
+  max-width: 100%;
 }
 
 
@@ -132,8 +132,8 @@ ul.breadcrumb-menu li:first-child a:hover {
 @media only screen and (max-width: 600px) {
   /* for phones */
   .words dt {
-    font-size: 3rem;
-    width: 100%;
+    font-size: 1.5rem;
+    max-width: 100%;
     }
 }
 
