@@ -63,9 +63,12 @@ ul.breadcrumb-menu {
   list-style: none;
   display: flex;
   position: sticky;
+  justify-content: center;
+  align-items: center;
   top: 0;
   margin: 0;
   padding: 0;
+  
 }
 
 ul.breadcrumb-menu li {
@@ -85,12 +88,24 @@ ul.breadcrumb-menu li a {
 .about-link {
   font-family: 'MyFont';
   text-decoration: none;
-  margin-left: auto;  
+  margin-left: auto;
+  min-width: 100px; 
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 80px;
+  text-align: center;
+
 }
 
 
 ul.breadcrumb-menu li:first-child {
-  width: 50px; 
+  min-width: 100px; 
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 80px;
+  text-align: center;
+
+
 }
 
 
@@ -107,6 +122,12 @@ ul.breadcrumb-menu li:first-child a:hover {
 }
 /************* Homepage Word List *************/
 
+#instruction-text {
+  font-family: 'MyFont';
+  font-size: 22px;
+  font-style: italic;
+}
+
 #navigation-to-galleries {
   display: block;
   padding-top: 5px;
@@ -116,11 +137,12 @@ ul.breadcrumb-menu li:first-child a:hover {
 
 
 .words dt {
-  font-family: MyFont;
+  font-family: 'MyFont';
   font-size: 5rem;
   background-color: white;
   border: solid black 2px;
   padding: 5px;
+  margin-top: 20px;
 }
 .words dd { 
   font-family: 'MyFont';
@@ -144,22 +166,18 @@ ul.breadcrumb-menu li:first-child a:hover {
 
 .gallery {
   max-width: 100%;
-  margin-top: 70px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 20px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: stretch;
+  gap: 20px;
 }
 
 .gallery-item {
   min-width: 300px;
   max-width: 400px;
   flex: 3 4 250px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin-bottom: 10px;
 }
 
