@@ -56,19 +56,17 @@ a:active {
   font-size: 22px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 ul.breadcrumb-menu {
+  width: 100%;
   list-style: none;
   display: flex;
-  position: sticky;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   top: 0;
   margin: 0;
-  padding: 0;
-  
+  padding: 0;  
 }
 
 ul.breadcrumb-menu li {
@@ -76,7 +74,7 @@ ul.breadcrumb-menu li {
 }
 
 ul.breadcrumb-menu li+li:before {
-  padding: 8px;
+  padding: 2px;
   color: black;
   content: "/\00a0";
 }
@@ -89,23 +87,22 @@ ul.breadcrumb-menu li a {
   font-family: 'MyFont';
   text-decoration: none;
   margin-left: auto;
-  min-width: 100px; 
+  width: 100px; 
   padding: 10px;
   border: 2px black solid;
   border-radius: 80px;
   text-align: center;
-
+  height: 45.5px;
 }
 
 
 ul.breadcrumb-menu li:first-child {
-  min-width: 100px; 
+  width: 100px; 
   padding: 10px;
   border: 2px black solid;
   border-radius: 80px;
   text-align: center;
-
-
+  height: 45.5px;
 }
 
 
@@ -114,10 +111,17 @@ ul.breadcrumb-menu li:first-child a:hover {
 }
 
 @media only screen and (max-width: 450px) {
-  #current-page-name {
-    font-size: 5vw;
-    padding-right: 15px;
+  
+  ul.breadcrumb-menu {
+    list-style: none;
+    display: block;
+    width: 150px;
   }
+
+  ul.breadcrumb-menu li:first-child {
+    margin-bottom: 10px;
+  }
+
 
 }
 /************* Homepage Word List *************/
